@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Esteban Costela
+N:;Esteban Costela;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:info@estebancostela.com.ar
+TEL;TYPE=CELL:+54 9 264 459-5997
+item1.ORG:Esteban Costela
+item1.X-ABLabel:unknown
+item2.URL:www.estebancostela.com.ar
+item2.X-ABLabel:homePage
+PHOTO:https://lh3.googleusercontent.com/contacts/ADlvnhLaVD02jgwI9cky_b_K_M
+ ELpiCQXO2JHvWCF8b7yIkqb9eaNc98
+CATEGORIES:myContacts
+END:VCARD
