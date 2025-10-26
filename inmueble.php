@@ -11,12 +11,14 @@ if ($inmueble['baja'] == 1) {
 <html lang="es">
 
 <head>
-	<title>Esteban Costela Propiedades</title>
+	<title>Rodrigues Gualda Estudio Inmobiliario</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="title" content="Green Zone 2.0 | Template by MLP Design" />
 	<meta name="author" content="MLP Design, webmasterneo" />
 	<link rel="stylesheet" href="css/planilla.css" type="text/css" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+		integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+		crossorigin="" />
 </head>
 
 <body>
@@ -102,7 +104,6 @@ if ($inmueble['baja'] == 1) {
 				</div>
 			<?PHP } ?>
 			<div class="post">
-				<?PHP echo $listadoImg ?>
 				<?PHP echo $vistaImg; ?>
 			</div>
 		</div>
@@ -112,13 +113,14 @@ if ($inmueble['baja'] == 1) {
 			<div class="notice"> Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 				<script>
 					document.write(new Date().getFullYear());
-				</script> Todos los derechos reservados | Esteban Costela Propiedades
+				</script> Todos los derechos reservados | Rodrigues Gualda Estudio Inmobiliario 2022
 			</div>
 		</div>
 		<!--FOOTER -->
 	</div>
 	<!-- Make sure you put this AFTER Leaflet's CSS -->
-	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin="">
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin="">
 	</script>
 	<!--script src="assets/js/mapview.js"></script-->
 

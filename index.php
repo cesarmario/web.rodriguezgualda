@@ -1,500 +1,541 @@
 <?PHP
 include('php/list_opciones.php');
-include('php/list_inmuebles_index.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Esteban Costela Propiedades</title>
+  <title>Rodrigues Gualda Estudio Inmobiliario</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/img-logo/costela-fb.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,900|Roboto+Mono:300,400,500">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <!-- Font awesome -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <!-- price picker slider -->
-    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
-    <!-- Fancybox slider -->
-    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-    <!-- Theme color -->
-    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/mediaelementplayer.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/fl-bigmug-line.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/32d0249864.js" crossorigin="anonymous"></script>
+  <!--HAY QUE HACER UN NUEVO ÍCONO REDONDO-->
 
-    <!-- Main style sheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-
-    <!-- Google Font -->
-    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!--Agrego el ícono de Enlace para probar-->
+  <link rel="icon" type="image/png" href="images/icono.png" />
+  <!--Agrego el ícono de Enlace para probar-->
 
 </head>
 
-<body class="aa-price-range">
-    <!-- Pre Loader -->
-    <div id="aa-preloader-area">
-        <div class="pulse"></div>
+<body>
+
+  <div class="site-loader"></div>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    <div class="site-navbar mt-8">
+      <div class="container py-1">
+        <div class="row align-items-center">
+          <div class="col-8 col-md-8 col-lg-4">
+            <a href="">
+              <img src="images/logo.png" width="200" height="" />
+            </a>
+
+
+
+            <!-- <h1 class="mb-0"><a href="index.php" class="text-white h2 mb-0"><strong>Rodrigues Gualda Estudio Inmobiliari<span class="text-danger">.</span></strong></a></h1> -->
+          </div>
+
+          <div class="col-4 col-md-4 col-lg-8">
+            <nav class="site-navigation text-right text-md-right" role="navigation">
+
+              <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+              <ul class="site-menu js-clone-nav d-none d-lg-block">
+                <li class="active">
+                  <a href="index.php">Inicio</a>
+                </li>
+                <li><a href="inmuebles.php">Inmuebles</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
-    <!-- END SCROLL TOP BUTTON -->
+  </div>
 
-    <!-- Start header section -->
-    <header id="aa-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-header-area">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <div class="aa-header-left">
-                                    <div class="aa-telephone-no">
-                                        <span class="fa fa-phone"></span> 264 459 5997
-                                    </div>
-                                    <div class="aa-email hidden-xs">
-                                        <span class="fa fa-envelope-o"></span>info@estebancostela.com.ar
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-xs-6">
-                                <div class="aa-header-right">
-                                    <!-- <a href="register.html" class="aa-register">Ingresar</a> -->
-                                    <a href="gestion/login.html" class="aa-login">Ingresar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="slide-one-item home-slider owl-carousel">
+    <!-- <video
+        class="bg-video"
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+        position="fixed";
+        width="auto";
+        height="auto";
+        top="50%"
+        left="50%"
+        transform="translateX(-50%) translateY(-50%)";
+        z-index="0";
+      >
+        <source src="images/enlace3.mp4" type="video/mp4" />
+      </video> -->
+
+
+
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista8.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">Alquiler destacado</span> -->
+            <h1 class="mb-2">Profesionalismo</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">$ 25.000</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </header>
-    <!-- End header section -->
+      </div>
+    </div>
 
-    <!-- Start menu section -->
-    <section id="aa-menu-area">
-        <nav class="navbar navbar-default main-navbar" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- LOGO -->
-                    <!-- Text based logo -->
-                    <a class="navbar-brand" href="index.php">
-                        <img src="img/img-logo/costela-transparente3.png" width="220px" alt="" />
-                    </a>
-                    <!-- Image based logo -->
-                    <!-- <a class="navbar-brand aa-logo-img" href="index.php"><img src="img/logo.png" alt="logo"></a> -->
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-                        <li class="active"><a href="index.php">Inicio</a></li>
-                        <li><a href="propiedades.php">Propiedades</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="contacto.html">Contacto <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="contacto.html">Contacto Rápido</a></li>
-                                <li><a href="./e/index.php">Tarjeta de Presentación</a></li>
-                                <li><a href="turnos.html">Solicitar Turno</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-        </nav>
-    </section>
-    <!-- End menu section -->
-
-    <!-- Start slider  -->
-    <section id="aa-slider">
-        <div class="aa-slider-area">
-            <!-- Top slider -->
-            <div class="aa-top-slider">
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="img/img-fondos/casa-10.jpeg" alt="img">
-                </div>
-                <!-- / Top slider single slide -->
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="img/img-portadas/lista26.jpeg" alt="img">
-                </div>
-                <!-- / Top slider single slide -->
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="img/img-portadas/lista24.jpeg" alt="img">
-                </div>
-                <!-- / Top slider single slide -->
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="img/img-fondos/casa-2.jpeg" alt="img">
-                </div>
-                <!-- / Top slider single slide -->
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="img/img-portadas/lista30.jpeg" alt="img">
-                </div>
-                <!-- / Top slider content -->
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista1.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">Alquiler destacado</span> -->
+            <h1 class="mb-2">Calidez</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">$ 25.000</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista2.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">Alquiler destacado</span> -->
+            <h1 class="mb-2">Confianza</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">$ 25.000</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
-    <!-- End slider  -->
+      </div>
+    </div>
 
-    <!-- Advance Search -->
-    <section id="aa-advance-search">
-        <div class="container">
-            <div class="aa-advance-search-area">
-                <form action="propiedades.php">
-                    <div class=" form">
-                        <div class="aa-advance-search-top">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="aa-single-advance-search">
-                                        <input type="text" placeholder="Buscar">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="aa-single-advance-search">
-                                        <select name="propiedad">
-                                            <option value="" selected>Propiedad</option>
-                                            <?PHP while ($propiedad = mysqli_fetch_assoc($rtspropiedad)) { ?>
-                                                <option value="<?PHP echo $propiedad['idPropiedad']; ?>"> <?PHP echo $propiedad['nombrePropiedad']; ?></option>
-                                            <?PHP } ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="aa-single-advance-search">
-                                        <select name="operacion">
-                                            <option value="" selected>Operación</option>
-                                            <?PHP while ($operacion = mysqli_fetch_assoc($rtsoperacion)) { ?>
-                                                <option value="<?PHP echo $operacion['idOperacion']; ?>"> <?PHP echo $operacion['nombreOperacion']; ?></option>
-                                            <?PHP } ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="aa-single-advance-search">
-                                        <select name="localidad">
-                                            <option value="" selected>Localidad</option>
-                                            <?PHP while ($localidad = mysqli_fetch_assoc($rtslocalidad)) { ?>
-                                                <option value="<?PHP echo $localidad['idLocalidad']; ?>"> <?PHP echo $localidad['nombreLocalidad']; ?></option>
-                                            <?PHP } ?>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="aa-single-advance-search">
-                                        <input class="aa-search-btn" type="submit" value="Buscar">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista6.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-success text-white px-3 mb-3 property-offer-type rounded">Alquiler destacado</span> -->
+            <h1 class="mb-2">Seriedad</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">$ 25.000</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
-    <!-- / Advance Search -->
+      </div>
+    </div>
 
-    <!-- Latest property -->
-    <section id="aa-latest-property">
-        <div class="container">
-            <div class="aa-latest-property-area">
-                <div class="aa-title">
-                    <h2>Inmuebles destacados</h2>
-                    <span></span>
-                    <p>
-                        Conocé las últimas propiedades agregadas a la web
-                    </p>
-                </div>
-                <div class="aa-latest-properties-content">
-                    <div class="row">
-                        <?PHP echo $listado; ?>
-                    </div>
-                </div>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista3.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Compromiso</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
-    <!-- / Latest property -->
+      </div>
+    </div>
 
-    <!-- Promo Banner Section -->
-    <section id="aa-promo-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-promo-banner-area">
-                        <h3>Encuentra la propiedad a tu medida</h3>
-                        <p>Ingresa a la amplia oferta que tenemos en nuestra base de datos. Elige la que esté a tu medida y consúltanos por cualquiera de ellas.</p>
-                        <a href="propiedades.php" class="aa-view-btn">Ver todas las propiedades</a>
-                    </div>
-                </div>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista4.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Distinción</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
-    <!-- / Promo Banner Section -->
+      </div>
+    </div>
 
-    <!-- / BLOG -->
-    <section id="aa-blog">
-        <div class="container">
-            <div class="aa-title">
-                <h2>BLOG</h2>
-                <span></span>
-                <p>
-                    Enterate de las últimas novedades
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-blog-area">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="aa-blog-content">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <article class="aa-blog-single aa-blog-details">
-                                                <figure class="aa-blog-img">
-                                                    <a href="blog.html"><img alt="img" src="img/img-blog/portada-1.png"></a>
-                                                    <span class="aa-date-tag">21 de Septiembre de 2023</span>
-                                                </figure>
-                                                <div class="aa-blog-single-content">
-                                                    <h2>Recomendaciones antes de alquilar</h2>
-                                                    <div class="aa-blog-single-bottom">
-                                                        <a class="aa-blog-author" href="blog.html"><i class="fa fa-user"></i>
-                                                            Esteban Costela</a>
-                                                    </div>
-                                                    <p>
-                                                        Después de hacer una búsqueda intensiva por nuestra web, y que tengas en carpeta varias opciones, es importante tener en cuenta las siguientes recomendaciones:
-                                                    </p>
-                                                    <p>
-                                                        Realiza toda tramitación siempre con Corredores Inmobiliarios matriculados, es la forma de garantizar que la operación llegue a buen puerto.
-                                                    </p>
-                                                    <blockquote>
-                                                        <p>Haznos saber todas las dudas que tengas, recuerda que es el lugar donde vas a vivir, desde el precio, la zona y si está disponible una visita previa al lugar. Ten en cuenta que siempre estaremos
-                                                            para ayudarte.</p>
-                                                    </blockquote>
-                                                    <p>
-                                                        Asesorate con agentes matriculados al firmar el Contrato de Alquiler, el mismo es un instrumento legal importante y debe ser redactado y supervisado por profesionales.
-                                                    </p>
-                                                    <p>
-                                                        Pregunta condiciones de la propiedad, sobre reuniones familiares, si aceptan o no mascotas y cual son los horarios prudentes para poner música.
-                                                    </p>
-                                                    <p>
-                                                        No solo te centres en la propiedad sino también en la zona, si hay plazas o parques para niños, colegios o guarderías, paradas de colectivo, salas de urgencia, etc.
-                                                    </p>
-                                                    <p>
-                                                        Seguramente hay miles de preguntas más, no dudes en contactarnos.
-                                                    </p>
-                                                </div>
-
-                                            </article>
-                                            <div class="aa-promo-banner-area" align="center">
-                                                <a href="blog.html" class="aa-view-btn">Ingresa a nuestro Blog para ver
-                                                    las últimas novedades</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista5.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Eficiencia</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
-    <!-- / FIN DEL BLOG -->
+      </div>
+    </div>
 
-
-    <!-- Client Testimonial -->
-    <section id="aa-client-testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-client-testimonial-area">
-                        <div class="aa-title">
-                            <h2 style="color: #fe7d07;">Precio Justo</h2>
-                            <span></span>
-                            <p>¡Certificamos nuestras propiedades con un sello de Precio Justo!</p>
-                            <div class="aa-testimonial-img">
-                                <img src="img/img-logo/sello-precio-justo.png" alt="testimonial img">
-                            </div>
-                            <div class="aa-testimonial-info">
-                                <p>
-                                    En nuestra empresa, valoramos la honestidad y la transparencia en el mercado inmobiliario. Por eso, cada una de nuestras propiedades cuenta con un certificado que garantiza que su precio está basado en una valuación profesional, realista y coherente.
-                                </p>
-                                <p>
-                                    Nuestros propietarios confían en nuestra experiencia y conocimiento del mercado para establecer un precio adecuado para su inmueble, sin sobrevalorarlo. Esto nos permite diferenciar nuestras propiedades de otras tantas que tienen precios inflados en el
-                                    mercado.
-                                </p>
-                                <p>
-                                    Nuestros propietarios confían en nuestra experiencia y conocimiento del mercado para establecer un precio adecuado para su inmueble, sin sobrevalorarlo. Esto nos permite diferenciar nuestras propiedades de otras tantas que tienen precios inflados en el
-                                    mercado.
-                                </p>
-                                <p>
-                                    ¡Ven y descubre nuestras propiedades certificadas con el sello de Precio Justo! Estamos comprometidos en brindarte una experiencia inmobiliaria honesta y confiable.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <section id="aa-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-contact-area">
-                        <div class="aa-contact-top">
-                            <div class="aa-contact-top-left">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.3537427407873!2d-68.54587012519922!3d-31.54190517420406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814176728cea9f%3A0xd785f3125f2bfe75!2sEsteban%20Costela%20propiedades!5e0!3m2!1ses-419!2ses!4v1692776126784!5m2!1ses-419!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                            <div class="aa-contact-top-right" align="justify">
-                                <h2>Contacto</h2>
-                                <p>Nuestras oficinas están a tu disposición en calle Francisco de Miranda Oeste Nº 1243, Departamento Capital, Provincia de San Juan.</p>
-                                <p>Nuestro horario es de corrido de Lunes a Viernes de 9:00 a 15:00 hs.</p>
-                                <ul class="contact-info-list">
-                                    <li> <i class="fa fa-phone"></i>264 459 5997</li>
-                                    <li> <i class="fa fa-envelope-o"></i>info@estebancostela.com.ar</li>
-                                    <li> <i class="fa fa-map-marker"></i>Francisco de Miranda 1243 (O) - <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Capital, San Juan</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="aa-contact-bottom">
-                            <div class="aa-title">
-                                <h2>Mantengamos el contacto</h2>
-                                <span></span>
-                                <p>Déjanos tu mensaje y nos contactaremos a la brevedad. Los campos indicados son obligatorios
-                                    <strong class="required">*</strong>
-                                </p>
-                            </div>
-                            <div class="aa-contact-form">
-                                <form class="contactform">
-                                    <p class="comment-form-author">
-                                        <label for="author">Nombre y Apellido <span class="required">*</span></label>
-                                        <input type="text" name="author" value="" size="30" required="required">
-                                    </p>
-                                    <p class="comment-form-email">
-                                        <label for="email">E-mail <span class="required">*</span></label>
-                                        <input type="email" name="email" value="" aria-required="true" required="required">
-                                    </p>
-                                    <p class="comment-form-url">
-                                        <label for="subject">Asunto</label>
-                                        <input type="text" name="subject">
-                                    </p>
-                                    <p class="comment-form-comment">
-                                        <label for="comment">Mensaje</label>
-                                        <textarea name="comment" cols="45" rows="8" aria-required="true" required="required"></textarea>
-                                    </p>
-                                    <p class="form-submit">
-                                        <input type="submit" name="submit" class="aa-browse-btn" value="Enviar mensaje">
-                                    </p>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista7.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Cooperación</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer id="aa-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="aa-footer-area">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="aa-footer-left">
-                                    <p>
-                                        Copyright &copy;
-                                        <script>
-                                            document.write(new Date().getFullYear());
-                                        </script> Todos los derechos reservados | Esteban Costela Propiedades
-                                        <br><b>"Excelencia en Negocios Inmobiliarios"</b>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-sm-6 col-xs-12">
-                                <div class="aa-footer-middle">
-                                    <a href="https://www.facebook.com/Estebancostelapropiedades" target="_blank"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://www.instagram.com/esteban_costela/" target="_blank"><i class="fa fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com/@estebancostelapropiedades4439" target="_blank"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="aa-footer-right">
-                                    <a href="index.php">Inicio</a>
-                                    <a href="propiedades.php">Propiedades</a>
-                                    <a href="nosotros.html">Nosotros</a>
-                                    <a href="servicios.html">Servicios</a>
-                                    <a href="blog.html">Blog</a>
-                                    <a href="contacto.html">Contacto</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista9.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Personalización</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
         </div>
-    </footer>
-    <!-- / Footer -->
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista10.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Claridad</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista11.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Capacidad</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url(images/lista12.jpeg);" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center text-center">
+          <div class="col-md-10">
+            <!-- <span class="d-inline-block bg-danger text-white px-3 mb-3 property-offer-type rounded">En venta destacado</span> -->
+            <h1 class="mb-2">Excelencia</h1>
+            <!-- <p class="mb-5"><strong class="h2 text-success font-weight-bold">Consultar</strong></p> -->
+            <!-- <p><a href="#" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 btn-2">Ver detalles</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="site-section site-section-sm pb-0">
+    <div class="container">
+      <div class="row">
+        <form class="form-search col-md-12" style="margin-top: -100px;" action="inmuebles.php" method="POST">
+          <div class="row  align-items-end">
+            <div class="col-md-3">
+              <label for="list-types">Propiedad</label>
+              <div class="select-wrap">
+                <select name="propiedad" id="propiedad" class="form-control d-block rounded-0">
+                  <option value=""><b>&nabla;</b>&nbsp;Todas las propiedades</option>
+                  <?PHP while ($propiedad = mysqli_fetch_assoc($rtspropiedad)) { ?>
+                    <option value="<?PHP echo $propiedad['idPropiedad']; ?>"> <?PHP echo $propiedad['nombrePropiedad']; ?></option>
+                  <?PHP } ?>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="offer-types">Operación</label>
+              <div class="select-wrap">
+                <select name="operacion" id="operacion" class="form-control d-block rounded-0">
+                  <option value=""><b>&nabla;</b>&nbsp;Todas las operaciones</option>
+                  <?PHP while ($operacion = mysqli_fetch_assoc($rtsoperacion)) { ?>
+                    <option value="<?PHP echo $operacion['idOperacion']; ?>"> <?PHP echo $operacion['nombreOperacion']; ?></option>
+                  <?PHP } ?>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="select-city">Localidad</label>
+              <div class="select-wrap">
+                <select name="localidad" id="localidad" class="form-control d-block rounded-0">
+                  <option value=""><b>&nabla;</b>&nbsp;Todas las localidades</option>
+                  <option value="">Localidad</option>
+                  <?PHP while ($localidad = mysqli_fetch_assoc($rtslocalidad)) { ?>
+                    <option value="<?PHP echo $localidad['idLocalidad']; ?>"> <?PHP echo $localidad['nombreLocalidad']; ?></option>
+                  <?PHP } ?>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="select-city">&nbsp;</label>
+              <input type="submit" class="btn btn-success text-white btn-block rounded-0" value="Buscar">
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="view-options bg-white py-3 px-3 d-md-flex align-items-center">
+            <!-- <div class="mr-auto">
+                <a href="index.php" class="icon-view view-module active"><span class="icon-view_module"></span></a>
+                <a href="view-list.html" class="icon-view view-list"><span class="icon-view_list"></span></a>         
+              </div> -->
+
+            <div class="ml-auto d-flex align-items-center">
+              <!-- <div>
+                  <a href="#" class="view-list px-3 border-right active">Todos</a>
+                  <a href="#" class="view-list px-3 border-right">Alquiler</a>
+                  <a href="#" class="view-list px-3">Venta</a>
+                </div> -->
 
 
+              <!--div-- class="select-wrap">
+                  <span class="icon icon-arrow_drop_down"></span>
+                  <select class="form-control form-control-sm d-block rounded-0">
+                    <option value="">Ordenar por</option>
+                    <option value="">Precio Ascendente</option>
+                    <option value="">Precio Descendente</option>
+                  </select>
+                </!--div-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- jQuery library -->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.js"></script>
-    <!-- slick slider -->
-    <script type="text/javascript" src="js/slick.js"></script>
-    <!-- Price picker slider -->
-    <script type="text/javascript" src="js/nouislider.js"></script>
-    <!-- mixit slider -->
-    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-    <!-- Custom js -->
-    <script src="js/custom.js"></script>
+    </div>
+  </div>
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7 text-center">
+          <div class="site-section-title">
+            <h2>¿Por qué elegirnos?</h2>
+          </div>
+          <p>Somos un grupo de profesionales con alta competencia en el mercado inmobiliario. Poseemos destacada trayectoria y conocemos a fondo las necesidades de nuestros clientes. Estamos para lo que necesites.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <a class="service text-center" style="color: #373435" ;>
+            <!-- <i class="fa-solid fa-file-certificate"></i> -->
+            <h1 style="font-size: 5em;"> <i class="fa-solid fa-user-graduate"></i></h1>
+            <h2 class="service-heading">Capacidad</h2>
+            <p>Todo nuestro trabajo está avalado por nuestra matrícula, la cual representa nuestro profesionalismo y dedicación. De esa manera el cliente y público en general podrá diferenciar fácilmente en el mercado a quién está debidamente habilitado.</p>
+            <!-- <p><span class="read-more">Enterate aquí</span></p> -->
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="service text-center" style="color: #373435" ;>
+            <!-- <i class="fa-solid fa-award"></i> -->
+            <h1 style="font-size: 5em;"> <i class="fa-solid fa-award"></i> </h1>
+            <h2 class="service-heading">Excelencia</h2>
+            <p>Rodrigues Gualda Estudio Inmobiliario controlará enfáticamente el desarrollo ético de la profesión a través de nuestro portal, de esta manera promulga, promueve y exige a sus miembros altos estándares de honor, respeto, ética profesional y transparencia.</p>
+            <!-- <p><span class="read-more">Enterate aquí</span></p> -->
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <a class="service text-center" style="color: #373435" ;>
+            <!-- <i class="fa-solid fa-handshake-simple"></i> -->
+            <h1 style="font-size: 5em;"> <i class="fa-solid fa-handshake-simple"></i></h1>
+            <h2 class="service-heading">Cooperación</h2>
+            <p align="justify">Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre un grupo de Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p>
+            <!-- <p><span class="read-more">Enterate aquí</span></p> -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7">
+            <div class="site-section-title text-center">
+              <h2>Nuestros Agentes</h2>
+              <p>Este gran grupo de trabajo se esforzará en que cumplas tus sueños. Conocelos y preguntale lo que desees conocer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
+              <div class="team-member">
+
+                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded mb-4">
+
+                <div class="text">
+
+                  <h2 class="mb-2 font-weight-light text-black h4">Esteban Costela</h2>
+                  <span class="d-block mb-3 text-white-opacity-05">Martillero y Corredor Inmobiliario<br>Matrícula Nº 166</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. Totam atque corporis nisi, veniam non. Tempore cupiditate, vitae minus obcaecati provident beatae!</p>
+                  <p>
+                    <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
+              <div class="team-member">
+
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded mb-4">
+
+                <div class="text">
+
+                  <h2 class="mb-2 font-weight-light text-black h4">Javier Blanco</h2>
+                  <span class="d-block mb-3 text-white-opacity-05">Corredor Inmobiliario<br>Matrícula Nº 137</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, cumque vitae voluptates culpa earum similique corrupti itaque veniam doloribus amet perspiciatis recusandae sequi nihil tenetur ad, modi quos id magni!</p>
+                  <p>
+                    <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-5">
+              <div class="team-member">
+
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded mb-4">
+
+                <div class="text">
+
+                  <h2 class="mb-2 font-weight-light text-black h4">Pablo Domínguez</h2>
+                  <span class="d-block mb-3 text-white-opacity-05">Corredor Inmobiliario<br>Matrícula Nº 122</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illo iusto, inventore, iure dolorum officiis modi repellat nobis, praesentium perspiciatis, explicabo. Atque cupiditate, voluptates pariatur odit officia libero veniam quo.</p>
+                  <p>
+                    <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                    <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div> 
+      </div>
+    </!--div-->
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="mb-5">
+            <h3 class="footer-heading mb-4">Acerca de Rodrigues Gualda Estudio Inmobiliari</h3>
+            <p>Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p>
+          </div>
+
+        </div>
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="row mb-5">
+            <div class="col-md-12">
+              <h3 class="footer-heading mb-4">Navegación</h3>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <ul class="list-unstyled">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="inmuebles.php">Inmuebles</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="gestion/">Gestión</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <ul class="list-unstyled">
+                <!-- <li><a href="#">Política de privacidad</a></li> -->
+                <li><a href="terminos.html">Términos y Condiciones</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!--div class="col-lg-4 mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Seguinos en las Redes</h3>
+
+                <div>
+                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                </div>
+          </div-->
+
+      </div>
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <script>
+              document.write(new Date().getFullYear());
+            </script> Todos los derechos reservados | Rodrigues Gualda Estudio Inmobiliario 2022
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
 
 </body>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
-
-</html>
 
 </html>

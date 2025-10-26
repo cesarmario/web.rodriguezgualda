@@ -21,12 +21,12 @@ $email = $_POST["email"];
 $mensaje = $_POST["message"];
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
-$smtpHost = "";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "";  // Mi cuenta de correo
-$smtpClave = "";  // Mi contraseña
+$smtpHost = "c2141624.ferozo.com";  // Dominio alternativo brindado en el email de alta 
+$smtpUsuario = "contacto@enlaceinmobiliario.com.ar";  // Mi cuenta de correo
+$smtpClave = "Enlace*2022";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "";
+$emailDestino = "contacto@enlaceinmobiliario.com.ar";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();

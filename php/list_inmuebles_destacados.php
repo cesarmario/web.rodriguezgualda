@@ -17,16 +17,19 @@ if (isset($_REQUEST['operacion'])) {
 
 $filtro = $propiedad . $operacion;
 
-$queryinmueblesdest = "SELECT * FROM vista_inmuebles WHERE baja != '1' and idInmueble != '$_REQUEST[idInmueble]' $filtro ORDER BY fecha DESC LIMIT 2";
+$queryinmueblesdest = "SELECT * FROM vista_inmuebles WHERE baja != '1' and idInmueble != '$_REQUEST[idInmueble]' $filtro ORDER BY fecha DESC LIMIT 3";
 
 $rtsinmueblesdest = mysqli_query($conexion, $queryinmueblesdest);
 
-$tituloDestacado = "";
+//$destacado = "<div class='row mb-5'>";
+
 $destacado = "";
+$tituloDestacado = "";
+
 while ($inmueblesdest = mysqli_fetch_assoc($rtsinmueblesdest)) {
 
-    $tituloDestacado = "Propiedades Similares";
-    $tituloInmuebleDest = $inmueblesdest['tituloInmueble'];
+    $tituloDestacado = "Propiedades Relacionadas";
+
     $queryimagenDest = "SELECT * FROM imagen WHERE idInmueble = '$inmueblesdest[idInmueble]' AND baja != '1' ORDER BY ordenImagen ASC LIMIT 1";
     $rtsimagenDest = mysqli_query($conexion, $queryimagenDest);
     $imgDest = mysqli_fetch_assoc($rtsimagenDest);
@@ -37,30 +40,20 @@ while ($inmueblesdest = mysqli_fetch_assoc($rtsinmueblesdest)) {
     if (!file_exists($nomimgDest)) {
         $nomimgDest = "gestion/assets/images/inmuebles/00000000.png";
     }
-
-    if ($inmueblesdest['plantasInmueble'] > 0) {
-        $plantasInmuebleDest = $inmueblesdest['plantasInmueble'] . " Planta";
-        if ($inmueblesdest['plantasInmueble'] > 1) {
-            $plantasInmuebleDest = $plantasInmuebleDest . "s";
-        }
-    } else {
-        $plantasInmuebleDest = "";
-    };
-
     if ($inmueblesdest['habitacionesInmueble'] > 0) {
         $habitacionesInmuebleDest = $inmueblesdest['habitacionesInmueble'] . "<sup>+</sup>";
     } else {
-        $habitacionesInmuebleDest = "";
+        $habitacionesInmuebleDest = "-";
     };
     if ($inmueblesdest['banosInmueble'] > 0) {
         $banosInmuebleDest = $inmueblesdest['banosInmueble'];
     } else {
-        $banosInmuebleDest = "";
+        $banosInmuebleDest = "&nbsp;-&nbsp;";
     };
     if ($inmueblesdest['superficieCubiertaInmueble'] > 0) {
         $superficieCubiertaInmuebleDest = $inmueblesdest['superficieCubiertaInmueble'];
     } else {
-        $superficieCubiertaInmuebleDest = "";
+        $superficieCubiertaInmuebleDest = "-";
     };
     if ($inmueblesdest['valorInmueble'] > 0) {
         $valorInmuebleDest = $inmueblesdest['monedaInmueble'] . "</b>&nbsp;" . $inmueblesdest['valorInmueble'];
@@ -78,30 +71,35 @@ while ($inmueblesdest = mysqli_fetch_assoc($rtsinmueblesdest)) {
         $domicilio .= "<br>&nbsp;<b>" . $inmueblesdest['nombreLocalidad'] . "</b>";
     }
 
-    $nombreLocalidad = $inmueblesdest['nombreLocalidad'];
-    $nombreOperacion = $inmueblesdest['nombreOperacion'];
-
-    $destacado .= " <div class='col-md-6'>";
-    $destacado .= "<article class='aa-properties-item'>";
-    $destacado .= "<a class='aa-properties-item-img' href='detalle-inmueble.php?idInmueble=" . $inmueblesdest['idInmueble'] . "&operacion=" . $inmueblesdest['idOperacion'] . "&propiedad=" . $inmueblesdest['idPropiedad'] . "'>";
-    $destacado .= "<img alt='img' src='" . $nomimgDest . "'></a>";
-    $destacado .= "<div class='aa-tag for-sale'>" . $nombreOperacion . "</div>";
-    $destacado .= "<div class='aa-properties-item-content'>";
-    $destacado .= "<div class='aa-properties-info'>";
-    $destacado .= "<span>" . $plantasInmuebleDest . "</span>";
-    $destacado .= "<span>" . $habitacionesInmuebleDest . "</span>";
-    $destacado .= "<span>" . $banosInmuebleDest . "</span>";
-    $destacado .= "<span>" . $superficieCubiertaInmuebleDest . "</span>";
+    $destacado .= "<div class='col-md-6 col-lg-4 mb-4'>";
+    $destacado .= "<div class='property-entry h-100'>";
+    $destacado .= "<a href='detalle-inmueble.php?idInmueble=" . $inmueblesdest['idInmueble'] . "&operacion=" . $inmueblesdest['idOperacion'] . "&propiedad=" . $inmueblesdest['idPropiedad'] . "' class='property-thumbnail'>";
+    $destacado .= "<div class='offer-type-wrap'>";
+    $destacado .= "<span class='offer-type bg-success'>" . $inmueblesdest['nombrePropiedad'] . "</span>";
+    $destacado .= "<span class='offer-type bg-secondary'>" . $inmueblesdest['nombreOperacion'] . "</span>";
     $destacado .= "</div>";
-    $destacado .= "<div class='aa-properties-about'>";
-    $destacado .= "<h3><a href='detalle-inmueble.php?idInmueble=" . $inmueblesdest['idInmueble'] . "&operacion=" . $inmueblesdest['idOperacion'] . "&propiedad=" . $inmueblesdest['idPropiedad'] . "'>" . $tituloInmuebleDest . "</a></h3>";
-    $destacado .= "<p>" . $inmuebles['estadoInmueble'] . "</p>";
+    $destacado .= "<img src='" . $nomimgDest . "' alt='" . $idimgDest . "' class='img-fluid'>";
+    $destacado .= "</a>";
+    $destacado .= "<div class='p-4 property-body'>";
+    $destacado .= "<h2 class='property-title'><a href='detalle-inmueble.php?idInmueble=" . $inmueblesdest['idInmueble'] . "&pperacion=" . $inmueblesdest['idOperacion'] . "&propiedad=" . $inmueblesdest['idPropiedad'] . "'>" .  $inmueblesdest['tituloInmueble'] . "</a></h2>";
+    $destacado .= "<span class='property-location d-block mb-3'><span class='property-icon icon-room'></span>" . $inmueblesdest['domicilioCalleInmueble'] . $domicilio . "</span>";
+    $destacado .= "<strong class='property-price text-primary mb-3 d-block text-success'>" . $valorInmuebleDest . "</strong>";
+    $destacado .= "<ul class='property-specs-wrap mb-3 mb-lg-0'>";
+    $destacado .= "<li>";
+    $destacado .= "<span class=property-specs'>Habitaciones</span>";
+    $destacado .= "<span class='property-specs-number'><br>" . $habitacionesInmuebleDest . " </span>";
+    $destacado .= "</li>";
+    $destacado .= "<li>";
+    $destacado .= "<span class='property-specs'>Baños</span>";
+    $destacado .= "<span class='property-specs-number'>" . $banosInmuebleDest . "</span>";
+    $destacado .= "</li>";
+    $destacado .= "<li>";
+    $destacado .= "<span class='property-specs'>Superficie</span>";
+    $destacado .= "<span class='property-specs-number'>" . $superficieCubiertaInmuebleDest . "</span>";
+    $destacado .= "</li>";
+    $destacado .= "</ul>";
     $destacado .= "</div>";
-    $destacado .= "<div class='aa-properties-detial'>";
-    $destacado .= "<span class='aa-price'>" . $valorInmuebleDest . "</span>";
-    $destacado .= "<a href='detalle-inmueble.php?idInmueble=" . $inmueblesdest['idInmueble'] . "&operacion=" . $inmueblesdest['idOperacion'] . "&propiedad=" . $inmueblesdest['idPropiedad'] . "'>Ver detalles</a>";
     $destacado .= "</div>";
-    $destacado .= "</div>";
-    $destacado .= "</article>";
     $destacado .= "</div>";
 }
+    //$destacado .= "</div>";
