@@ -347,7 +347,7 @@ include('php/list_opciones.php');
           <div class="site-section-title">
             <h2>¿Por qué elegirnos?</h2>
           </div>
-          <p>Somos un grupo de profesionales con alta competencia en el mercado inmobiliario. Poseemos destacada trayectoria y conocemos a fondo las necesidades de nuestros clientes. Estamos para lo que necesites.</p>
+          <p>Somos un equipo de profesionales matriculados capacitados con alta competencia en el mercado inmobiliario. Nuestra trayectoria, mas de 10 años brindando asesoramiento y soluciones a nuestros clientes avalan nuestro trabajo en el rubro.</p>
         </div>
       </div>
 
