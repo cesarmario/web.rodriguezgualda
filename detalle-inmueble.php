@@ -6,7 +6,7 @@ include('php/list_inmuebles_destacados.php');
 <html lang="es">
 
 <head>
-  <title>Rodrigues Gualda Estudio Inmobiliari</title>
+  <title>Rodriguez Gualda Estudio inmobiliario</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -283,7 +283,7 @@ include('php/list_inmuebles_destacados.php');
         <div class="row">
           <div class="col-lg-4">
             <div class="mb-5">
-              <h3 class="footer-heading mb-4">Acerca de Rodrigues Gualda Estudio Inmobiliari</h3>
+              <h3 class="footer-heading mb-4">Acerca de Rodriguez Gualda Estudio inmobiliario</h3>
               <p>Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p>
             </div>
 
@@ -300,20 +300,16 @@ include('php/list_inmuebles_destacados.php');
                   <li><a href="index.php">Inicio</a></li>
                   <li><a href="inmuebles.php">Inmuebles</a></li>
                   <li><a href="servicios.html">Servicios</a></li>
-                  <li><a href="contacto.html">Contacto</a></li>
-                  <li><a href="gestion/">Gestión</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-lg-6">
                 <ul class="list-unstyled">
-                  <!-- <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contact.html">Contacto</a></li> -->
                   <!-- <li><a href="#">Política de privacidad</a></li> -->
-                  <li><a href="terminos.html">Términos y Condiciones</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="gestion/">Gestión</a></li>
                 </ul>
               </div>
             </div>
-
 
           </div>
 
@@ -339,7 +335,7 @@ include('php/list_inmuebles_destacados.php');
               Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
               <script>
                 document.write(new Date().getFullYear());
-              </script> Todos los derechos reservados | Rodrigues Gualda Estudio Inmobiliario 2022
+              </script> Todos los derechos reservados | Rodriguez Gualda Estudio Inmobiliario
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>

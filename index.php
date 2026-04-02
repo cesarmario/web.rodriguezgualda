@@ -5,7 +5,7 @@ include('php/list_opciones.php');
 <html lang="es">
 
 <head>
-  <title>Rodrigues Gualda Estudio Inmobiliario</title>
+  <title>Rodriguez Gualda Estudio Inmobiliario</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -58,7 +58,7 @@ include('php/list_opciones.php');
 
 
 
-            <!-- <h1 class="mb-0"><a href="index.php" class="text-white h2 mb-0"><strong>Rodrigues Gualda Estudio Inmobiliari<span class="text-danger">.</span></strong></a></h1> -->
+            <!-- <h1 class="mb-0"><a href="index.php" class="text-white h2 mb-0"><strong>Rodriguez Gualda Estudio Inmobiliari<span class="text-danger">.</span></strong></a></h1> -->
           </div>
 
           <div class="col-4 col-md-4 col-lg-8">
@@ -347,7 +347,7 @@ include('php/list_opciones.php');
           <div class="site-section-title">
             <h2>¿Por qué elegirnos?</h2>
           </div>
-          <p>Somos un equipo de profesionales matriculados capacitados con alta competencia en el mercado inmobiliario. Nuestra trayectoria, mas de 10 años brindando asesoramiento y soluciones a nuestros clientes avalan nuestro trabajo en el rubro.</p>
+          <p>Porque brindamos confianza y seguridad en cada operación, respaldados por más de 10 años de experiencia en el sector y una sólida trayectoria institucional en el C.P.C.I.S.J. Nos caracteriza la formalidad en el trato, la distinción en el servicio y el compromiso de un acompañamiento verdaderamente profesional y personalizado, siempre orientado a proteger y satisfacer los intereses de nuestros clientes.</p>
         </div>
       </div>
 
@@ -357,25 +357,29 @@ include('php/list_opciones.php');
             <!-- <i class="fa-solid fa-file-certificate"></i> -->
             <h1 style="font-size: 5em;"> <i class="fa-solid fa-user-graduate"></i></h1>
             <h2 class="service-heading">Capacidad</h2>
-            <p>Todo nuestro trabajo está avalado por nuestra matrícula, la cual representa nuestro profesionalismo y dedicación. De esa manera el cliente y público en general podrá diferenciar fácilmente en el mercado a quién está debidamente habilitado.</p>
+            <p>Nuestra mayor fortaleza es la capacidad profesional, avalada por nuestra matrícula en el C.P.C.I.S.J. y más de 10 años de experiencia en el rubro. Este respaldo institucional garantiza un servicio con confianza, transparencia y excelencia. Sumamos capacidad técnica, operativa y humana para acompañar cada gestión inmobiliaria con seriedad y compromiso.</p>
             <!-- <p><span class="read-more">Enterate aquí</span></p> -->
           </a>
         </div>
+
+        <div class="col-md-6 col-lg-4">
+          <!-- <a class="service text-center" style="color: #373435" ;> -->
+          <!-- <i class="fa-solid fa-handshake-simple"></i> -->
+          <!-- <h1 style="font-size: 5em;"> <i class="fa-solid fa-handshake-simple"></i></h1> -->
+          <!-- <h2 class="service-heading">Cooperación</h2> -->
+          <!-- <p align="justify">Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre un grupo de Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p> -->
+          <!-- <p><span class="read-more">Enterate aquí</span></p> -->
+          <!-- </a> -->
+        </div>
+
         <div class="col-md-6 col-lg-4">
           <a class="service text-center" style="color: #373435" ;>
             <!-- <i class="fa-solid fa-award"></i> -->
             <h1 style="font-size: 5em;"> <i class="fa-solid fa-award"></i> </h1>
             <h2 class="service-heading">Excelencia</h2>
-            <p>Rodrigues Gualda Estudio Inmobiliario controlará enfáticamente el desarrollo ético de la profesión a través de nuestro portal, de esta manera promulga, promueve y exige a sus miembros altos estándares de honor, respeto, ética profesional y transparencia.</p>
-            <!-- <p><span class="read-more">Enterate aquí</span></p> -->
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="service text-center" style="color: #373435" ;>
-            <!-- <i class="fa-solid fa-handshake-simple"></i> -->
-            <h1 style="font-size: 5em;"> <i class="fa-solid fa-handshake-simple"></i></h1>
-            <h2 class="service-heading">Cooperación</h2>
-            <p align="justify">Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre un grupo de Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p>
+            <p>La excelencia es el sello que nos distingue: un servicio profesional respaldado por nuestra matrícula en el C.P.C.I.S.J. y un compromiso permanente con la confianza, la transparencia y la atención personalizada. Cada gestión refleja nuestra búsqueda de distinción y calidad en todos los aspectos.
+              Rodríguez Gualda Inmobiliaria ha adaptado todos sus procesos de Administraciones, alquileres, tasaciones y ventas para lograr la excelencia, brindando un servicio diferenciado. Cuidando rigurosamente cada etapa del proceso y adaptándose a los continuos cambios que exige el sector.
+            </p>
             <!-- <p><span class="read-more">Enterate aquí</span></p> -->
           </a>
         </div>
@@ -462,7 +466,7 @@ include('php/list_opciones.php');
       <div class="row">
         <div class="col-lg-4">
           <div class="mb-5">
-            <h3 class="footer-heading mb-4">Acerca de Rodrigues Gualda Estudio Inmobiliari</h3>
+            <h3 class="footer-heading mb-4">Acerca de Rodriguez Gualda Estudio Inmobiliari</h3>
             <p>Este portal nace con la necesidad imperiosa de ordenar y ejecutar trabajos coordinados entre Profesionales Corredores Inmobiliarios debidamente Matriculados en la Provincia de San Juan.</p>
           </div>
 
@@ -477,14 +481,13 @@ include('php/list_opciones.php');
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="inmuebles.php">Inmuebles</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="gestion/">Gestión</a></li>
               </ul>
             </div>
             <div class="col-md-6 col-lg-6">
               <ul class="list-unstyled">
                 <!-- <li><a href="#">Política de privacidad</a></li> -->
-                <li><a href="terminos.html">Términos y Condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="gestion/">Gestión</a></li>
               </ul>
             </div>
           </div>
@@ -510,7 +513,7 @@ include('php/list_opciones.php');
             Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
             <script>
               document.write(new Date().getFullYear());
-            </script> Todos los derechos reservados | Rodrigues Gualda Estudio Inmobiliario 2022
+            </script> Todos los derechos reservados | Rodriguez Gualda Estudio Inmobiliario
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>

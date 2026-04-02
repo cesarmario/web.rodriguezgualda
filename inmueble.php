@@ -11,7 +11,7 @@ if ($inmueble['baja'] == 1) {
 <html lang="es">
 
 <head>
-	<title>Rodrigues Gualda Estudio Inmobiliario</title>
+	<title>Rodriguez Gualda Estudio Inmobiliario</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="title" content="Green Zone 2.0 | Template by MLP Design" />
 	<meta name="author" content="MLP Design, webmasterneo" />
@@ -113,7 +113,7 @@ if ($inmueble['baja'] == 1) {
 			<div class="notice"> Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 				<script>
 					document.write(new Date().getFullYear());
-				</script> Todos los derechos reservados | Rodrigues Gualda Estudio Inmobiliario 2022
+				</script> Todos los derechos reservados | Rodriguez Gualda Estudio Inmobiliario
 			</div>
 		</div>
 		<!--FOOTER -->
