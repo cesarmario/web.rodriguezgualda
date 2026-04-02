@@ -293,7 +293,6 @@ include('php/list_opciones.php');
               <div class="select-wrap">
                 <select name="localidad" id="localidad" class="form-control d-block rounded-0">
                   <option value=""><b>&nabla;</b>&nbsp;Todas las localidades</option>
-                  <option value="">Localidad</option>
                   <?PHP while ($localidad = mysqli_fetch_assoc($rtslocalidad)) { ?>
                     <option value="<?PHP echo $localidad['idLocalidad']; ?>"> <?PHP echo $localidad['nombreLocalidad']; ?></option>
                   <?PHP } ?>
