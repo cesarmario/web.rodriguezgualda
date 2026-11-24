@@ -533,6 +533,10 @@ include('php/list_opciones.php');
 
   <script src="js/main.js"></script>
 
+  <a href="https://wa.me/5492645102031" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Enviar mensaje por WhatsApp">
+    <img src="images/btn_whatsapp.png" alt="WhatsApp">
+  </a>
+
 </body>
 
 </html>

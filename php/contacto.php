@@ -23,11 +23,11 @@ $mensaje = $_POST["message"];
 
 // Datos de la cuenta de correo utilizada para enviar vía SMTP
 $smtpHost = "c2141624.ferozo.com";  // Dominio alternativo brindado en el email de alta 
-$smtpUsuario = "estudio@rodriguezgualda.com.ar";  // Mi cuenta de correo
-$smtpClave = "Ba2OH*u@";  // Mi contraseña
+$smtpUsuario = "info@rodriguezgualda.com.ar";  // Mi cuenta de correo
+$smtpClave = "NmZxfF*3ZGxPAIA";  // Mi contraseña
 
 // Email donde se enviaran los datos cargados en el formulario de contacto
-$emailDestino = "estudio@rodriguezgualda.com.ar";
+$emailDestino = "info@rodriguezgualda.com.ar";
 
 $mail = new PHPMailer();
 $mail->IsSMTP();
